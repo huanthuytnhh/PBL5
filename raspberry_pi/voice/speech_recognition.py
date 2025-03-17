@@ -5,6 +5,7 @@ import sys
 import speech_recognition as sr
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from control.config import MIC_INDEX
 from control.led_control import toggle_led, turn_off_led, turn_on_led
 
 # Tạo thư mục logs nếu chưa tồn tại
@@ -15,12 +16,9 @@ LOG_FILE = os.path.join(LOG_DIR, "speech_log.txt")
 
 def log_speech(text):
     """Ghi nội dung nhận diện vào file"""
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(LOG_FILE, "a", encoding="utf-8") as file:
-        file.write(f"{text}\n")
-
-
-# Thay đổi index này nếu microphone mặc định không hoạt động
-MIC_INDEX = 3  # Đặt thành số index của microphone hoạt động
+        file.write(f"[{timestamp}] {text}\n")
 
 
 def recognize_speech():
@@ -114,11 +112,3 @@ def process_command(text):
 
     log_speech(f"👉 Phản hồi: {response}")  # Ghi phản hồi vào file log
     return response
-
-
-def simulate_speech():
-    """Giả lập nhận diện giọng nói bằng cách nhập văn bản"""
-    print("Nhập lệnh của bạn (bật đèn, tắt đèn, chuyển đèn):")
-    text = input("> ")
-    log_speech(text)
-    return text.lower()
