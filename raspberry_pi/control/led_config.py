@@ -5,5 +5,5 @@ LED_PINS = {
     "led_phong_con_trai": 23,  # LED phòng con trai
     "led_bep": 24,  # LED bếp
 }
-MIC_INDEX = 3  # Thay đổi theo thiết bị của bạn
+MIC_INDEX = 5  # Thay đổi theo thiết bị của bạn
 API_URL = "http://127.0.0.1:8000/api/devices/control_device/"

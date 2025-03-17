@@ -30,3 +30,18 @@ Tắt đèn phòng ba mẹ
 👉 Phản hồi: Đã tắt đèn led_phong_ba_me
 Tắt đèn phòng khách
 👉 Phản hồi: Đã tắt đèn led_phong_khach
+[2025-03-17 16:36:40] [Lỗi microphone: 'NoneType' object has no attribute 'close']
+[2025-03-17 16:38:49] hồ Xin chào
+[2025-03-17 16:38:49] 👉 Phản hồi: Không hiểu lệnh: 'hồ xin chào'
+[2025-03-17 16:39:00] bật đèn phòng khách
+[2025-03-17 16:39:00] 👉 Phản hồi: Đã bật đèn led_phong_khach
+[2025-03-17 16:39:09] bật đèn phòng bố mẹ
+[2025-03-17 16:39:09] 👉 Phản hồi: Đã bật đèn led_phong_ba_me
+[2025-03-17 16:39:48] Tắt tất cả đèn
+[2025-03-17 16:39:48] 👉 Phản hồi: Đã tắt tất cả đèn
+[2025-03-17 16:40:03] Bật tất cả đèn
+[2025-03-17 16:40:03] 👉 Phản hồi: Đã bật tất cả đèn
+[2025-03-17 16:40:10] Tắt đèn phòng khách
+[2025-03-17 16:40:10] 👉 Phản hồi: Đã tắt đèn led_phong_khach
+[2025-03-17 16:40:16] Tắt đèn phòng bố mẹ
+[2025-03-17 16:40:16] 👉 Phản hồi: Đã tắt đèn led_phong_ba_me

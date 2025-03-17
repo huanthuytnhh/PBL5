@@ -27,7 +27,7 @@ def test_led(pin):
 
 def test_all_leds():
     """Test tất cả các LED đã cấu hình"""
-    from control.config import LED_PINS
+    from control.led_config import LED_PINS
 
     print("Đang test tất cả các LED...")
     for name, pin in LED_PINS.items():

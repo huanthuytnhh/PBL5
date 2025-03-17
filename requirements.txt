@@ -1,0 +1,6 @@
+python3-django apt
+djangorestframework break
+speechrecognition break
+python3-gpiozero apt
+portaudio19-dev apt
+flac apt

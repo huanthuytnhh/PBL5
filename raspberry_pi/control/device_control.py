@@ -4,7 +4,7 @@ import sys
 import requests
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from raspberry_pi.control.config import API_URL
+from raspberry_pi.control.led_config import API_URL
 
 # Import API_URL từ config.py
 

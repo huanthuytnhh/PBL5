@@ -8,7 +8,7 @@ def list_microphones():
         print(f"Microphone {index}: {name}")
 
 
-def test_microphone(device_index=3):
+def test_microphone(device_index=None):
     """Test microphone cụ thể"""
     recognizer = sr.Recognizer()
 

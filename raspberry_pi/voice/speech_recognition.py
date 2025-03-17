@@ -5,7 +5,8 @@ import sys
 import speech_recognition as sr
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from control.config import MIC_INDEX
+from control.led_config import MIC_INDEX
+
 from control.led_control import toggle_led, turn_off_led, turn_on_led
 
 # Tạo thư mục logs nếu chưa tồn tại
