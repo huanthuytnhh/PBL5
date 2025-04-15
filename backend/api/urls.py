@@ -1,7 +1,12 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import DeviceViewSet
 
-from .views import control_device
+# Khởi tạo router cho REST framework
+router = DefaultRouter()
+router.register(r'devices', DeviceViewSet)
 
 urlpatterns = [
-    path("devices/control_device/", control_device, name="control_device"),
+    # Đưa các routes tự động được tạo bởi router vào urlpatterns
+    path('', include(router.urls)),
 ]

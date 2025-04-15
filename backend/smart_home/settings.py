@@ -37,12 +37,15 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "devices",  # Thêm app của bạn vào đây
-    "api",
+    "devices",  # App for managing devices
+    "api",      # App for the API
+    "rest_framework",  # Django REST Framework
+    # "corsheaders",     # Temporarily removed
 ]
 
 
 MIDDLEWARE = [
+    # "corsheaders.middleware.CorsMiddleware", # Temporarily removed
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -124,3 +127,23 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# # Cấu hình CORS - Temporarily removed
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://localhost:19006",
+#     "exp://localhost:19000",
+# ]
+# CORS_ALLOW_ALL_ORIGINS = True
+
+# Cấu hình REST Framework (Simplified)
+REST_FRAMEWORK = {
+    # Use default authentication/permissions for now, or specify simpler ones if needed
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.AllowAny', # Or IsAdminUser if only admin access needed initially
+    # ],
+}
+
+# # Đường dẫn cho file tạm khi upload âm thanh - Temporarily removed if not needed yet
+# MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
